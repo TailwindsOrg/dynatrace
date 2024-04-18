@@ -1,0 +1,23 @@
+token:
+  # apiToken: ZHQwYzAxLkFGNlQ2RExWNU9BM0pFQkMyS1RaUUtBRC4yUEdFRkNQN1BRQVJBMkI0REJZRE9DRks0Wkc0RFBLRFI0VEdITU9HSERSNkZCTU5SQUFXR1RYVFVJN1g3VEhO
+  # dataIngestToken: ZHQwYzAxLlA3TlZLUlZPQkVDU1dKNjdKQ09TNTRPUy5XNTdCTTZIRlBOQTRQQTZDUUdGUllFRTNUTlRIQk9aTUxPUUFEWTZDVUxXVkhaVENIMklUNzVHNk9FWk03TzRR
+  apiToken: ZHQwYzAxLlI1V1ZLTDdNNU9UV0tYVk9CRE5RTlJIUS5HVU1SR0NBRVhNRFc2RjVBRDY1VzQyWVhBTDJYRFNBRURCV0s1N0czWjVPN0FMSEFTSzNIVkxERk9NMk5MUk82
+  dataIngestToken: ZHQwYzAxLjI2WVNPSVZCVzdZTEFCNUMzVE5MTlBYVS5SRkVVN1ZRT0k2Wk5RU1FQVFpCWjNYSzJGVDdBUVVaTUlTRTRaSkIzSjJET1NKVUVMRVJMNlVaRVlETUdFNFE2
+
+metadata:
+  name: iffqas-eks-us-east-1
+
+DynaKube:
+  spec:
+    # Dynatrace apiUrl including the `/api` path at the end
+    apiUrl: https://dob968.dynatrace-managed.com/e/fa34bd83-dfc1-43f2-add4-241afe8726fc/api
+    
+    # name of secret holding `apiToken` and `paasToken`
+    # tokens: qas-kubernetes
+    
+    # Sets Network Zone for OneAgent and ActiveGate pods
+    networkZone: iffqas-eks-us-east-1
+
+    # Set activation group for ActiveGate
+    activeGate:
+      group: iffqas-eks-us-east-1
