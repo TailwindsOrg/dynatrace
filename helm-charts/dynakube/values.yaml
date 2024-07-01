@@ -1,20 +1,13 @@
 token:
-  apiToken: ""
-  dataIngestToken: ""
+  apiToken: ZHQwYzAxLkNUNEtPUEVWWUZWVFFOTUk2SDZSREFRMi5RSFNMTVhKTlJQS1k3WjZPNkUzSkFUUTY1R1VLN0NMUkNDWUJYR1pOVDJaUVpUTU5YWFFBUzdWUTZTWENDRzNS
+  dataIngestToken: ZHQwYzAxLlVWU0VUSk00NVhNQ0k3NUpON0hQN01IUC5ZUUs2T1ZWV0VPWUVIUks0SU1XUDNaTzdDWkQzTVpISFNaVVJCS1FZQ0pHMkFWRzJLWDZQS1ZKVEpMQTI0UFRP
 
 metadata:
-  name: dev-blue-eks-cluster
+  name: kamal-cluster-56
 
-DynaKube:
+dynaKube:
   spec:
     # Dynatrace apiUrl including the `/api` path at the end
-    apiUrl: https://78789.dynatrace-managed.com/e/c338b4d2-86ea-4318-916f-6441e9e0116d/api
+    apiUrl: https://tnp47137.live.dynatrace.com/api
 
-    # name of secret holding `apiToken` and `paasToken`
-    #tokens: dev-kubernetes
-
-    # Sets Network Zone for OneAgent and ActiveGate pods
-    networkZone: dev-blue-eks-cluster
-    # Set activation group for ActiveGate
-    activeGate:
-      group: dev-blue-eks-cluster
+    group: kamal-cluster
