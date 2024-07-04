@@ -566,7 +566,10 @@ service:
   externalTrafficPolicy: Cluster
   ## @param service.annotations Additional custom annotations for Keycloak service
   ##
-  annotations: {}
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"  # Example for AWS Network Load Balancer
+    service.beta.kubernetes.io/azure-load-balancer-internal: "false"  # Example for Azure
+    service.beta.kubernetes.io/gcp-load-balancer-type: "External"  # Example for GCP
   ## @param service.extraPorts Extra port to expose on Keycloak service
   ##
   extraPorts: []
@@ -589,12 +592,12 @@ service:
 ingress:
   ## @param ingress.enabled Enable ingress record generation for Keycloak
   ##
-  enabled: true
+  enabled: false
   ## @param ingress.ingressClassName IngressClass that will be be used to implement the Ingress (Kubernetes 1.18+)
   ## This is supported in Kubernetes 1.18+ and required if you have more than one IngressClass marked as the default for your cluster .
   ## ref: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
   ##
-  ingressClassName: "alb"
+  ingressClassName: ""
   ## @param ingress.pathType Ingress path type
   ##
   pathType: ImplementationSpecific
@@ -603,7 +606,7 @@ ingress:
   apiVersion: ""
   ## @param ingress.hostname Default host for the ingress record (evaluated as template)
   ##
-  hostname: ""
+  hostname: keycloak.local
   ## @param ingress.path [string] Default path for the ingress record (evaluated as template)
   ##
   path: "{{ .Values.httpRelativePath }}"
@@ -619,14 +622,7 @@ ingress:
   ##   kubernetes.io/ingress.class: nginx
   ##   cert-manager.io/cluster-issuer: cluster-issuer-name
   ##
-  annotations: 
-    kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:969849892126:certificate/13cef002-cc6a-4b28-98d3-b0d9ba26135a
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: '443'
-    alb.ingress.kubernetes.io/group.name: production
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
+  annotations: {}
   ## @param ingress.labels Additional labels for the Ingress resource.
   ## e.g:
   ## labels:
