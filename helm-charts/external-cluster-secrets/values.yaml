@@ -1,0 +1,64 @@
+serviceAccount:
+  name: external-secrets-aws-secret-store
+  labels:
+    velero.io/exclude-from-backup: "true"
+  namespace: kube-system
+  annotations:
+    eks.amazonaws.com/role-arn: 
+
+secretStores:
+- name: 
+  labels:
+    velero.io/exclude-from-backup: "true"
+  provider:
+    aws:
+      service: SecretsManager
+      region: 
+      auth:
+        jwt:
+          serviceAccountRef: 
+            name: external-secrets-aws-secret-store
+            namespace: 
+
+clusterSecrets:
+
+- name: 
+  labels:
+    velero.io/exclude-from-backup: "true"
+  externalSecretName: 
+  refreshTime: 30m
+  externalSecretMetadata:
+    labels:
+      velero.io/exclude-from-backup: "true"
+  externalSecretSpec:
+    secretStoreRef:
+      name: 
+      kind: ClusterSecretStore
+    refreshInterval: "1h"
+    data:
+    - secretKey: 
+      remoteRef:
+        key: 
+        property: 
+    - secretKey: 
+      remoteRef:
+        key: 
+        property: 
+    - secretKey: 
+      remoteRef:
+        key: 
+        property: 
+    - secretKey: 
+      remoteRef:
+        key: 
+        property: 
+    target:
+      name: 
+      template:
+        type: 
+        metadata:
+          annotations: {}
+          labels:
+            velero.io/exclude-from-backup: "true"
+        data:
+            
