@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: v0.9.18
+description: External secret management for Kubernetes
+name: external-secrets-operator
+type: application
+version: 0.9.18
