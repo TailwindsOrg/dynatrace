@@ -397,7 +397,7 @@ controller:
     - workflow-aggregator:600.vb_57cdd26fdd7
     - git:5.2.2
     - configuration-as-code:1836.vccda_4a_122a_a_e
-    - blueocean:1.25.5
+    - blueocean:1.27.14
 
   # If set to false, Jenkins will download the minimum required version of all dependencies.
   # -- Download the minimum required version or latest version of all dependencies
