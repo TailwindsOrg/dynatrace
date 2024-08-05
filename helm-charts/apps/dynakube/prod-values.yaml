@@ -1,0 +1,23 @@
+# token:
+# #   apiToken: "ZHQwYzAxLlZFUzdVSklHS1dJWVNFM0ZCMjdVNzNEUC5USVVHNllZN1A2SEtXM0ZMMlc1MllIRFFLMlFTQkEzWERDWDNHQTNVTjcyQU5aWlVKTkhWUUdNV1lNWE1EUFFW"
+# #   dataIngestToken: "ZHQwYzAxLlJCTUlPVlpUS1FLTVgyRVE2VlJMRjcyWS5GVlFKRE1HU05LU0tSMlNPQ0MyQU1KU1FSMktaVlZSREZCSFpIVFJZR0dBSFlFRllZVDROWVdNVUtJWFdUNklD"
+# apiToken: ZHQwYzAxLkVDQklEQjNOVDVFREJMQ0MzREJGQzZINC5GRUFKUUQ3SUNQNU9GUElFVk9NWElTQkRUMkM0VFFRT09IVzZUU05YSURYM1Q2R0VUV0M0MkxFTzM2QjZCS1FD
+# dataIngestToken: ZHQwYzAxLlJYNU5VN1hBNUNZSVNQNFZUUTNBSEhYSy5RNkVYVk4zVUlVRkk2NUtFWTNNREtBWk5GVVhZVklSRzNKNUE1VTdGUjNPWVBKUDZHSlEySFpGMk1FTkFSSTRS
+
+# metadata:
+#  name: iffprod-eks-us-east-1
+# #
+# DynaKube:
+#  spec:
+#     Dynatrace apiUrl including the `/api` path at the end
+#     apiUrl: https://dob968.dynatrace-managed.com/e/f7540690-d560-471b-a5de-be680750cf1d/api
+    
+#     name of secret holding `apiToken` and `paasToken`
+#     tokens: iffprod-eks-us-east-1
+    
+#     Sets Network Zone for OneAgent and ActiveGate pods
+#     networkZone: iffprod-eks-us-east-1
+
+#     Set activation group for ActiveGate
+#     activeGate:
+#       group: iffprod-eks-us-east-1

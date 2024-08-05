@@ -1,0 +1,13 @@
+token:
+  apiToken: ZHQwYzAxLkNUNEtPUEVWWUZWVFFOTUk2SDZSREFRMi5RSFNMTVhKTlJQS1k3WjZPNkUzSkFUUTY1R1VLN0NMUkNDWUJYR1pOVDJaUVpUTU5YWFFBUzdWUTZTWENDRzNS
+  dataIngestToken: ZHQwYzAxLlVWU0VUSk00NVhNQ0k3NUpON0hQN01IUC5ZUUs2T1ZWV0VPWUVIUks0SU1XUDNaTzdDWkQzTVpISFNaVVJCS1FZQ0pHMkFWRzJLWDZQS1ZKVEpMQTI0UFRP
+
+metadata:
+  name: kamal-cluster-56
+
+dynaKube:
+  spec:
+    # Dynatrace apiUrl including the `/api` path at the end
+    apiUrl: https://tnp47137.live.dynatrace.com/api
+
+    group: kamal-cluster
